@@ -190,6 +190,11 @@ footer span
     font-weight: 200;
 }
 
+.resultado
+{
+    font-size: 1.3em;
+}
+
 @media (max-width: 768px)
 {
     .categorias
