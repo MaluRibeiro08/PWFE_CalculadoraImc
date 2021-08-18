@@ -195,6 +195,17 @@ footer span
     font-size: 1.2em;
 }
 
+.vermelho
+{
+    color: red;
+}
+
+.azul
+{
+    color: blue;
+}
+
+
 @media (max-width: 768px)
 {
     .categorias
