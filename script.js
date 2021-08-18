@@ -6,8 +6,8 @@ const calcular = document.getElementById('calcular');
 function calcularImc ()
 {
     const nome = document.getElementById('nome').value;
-    const altura = document.getElementById('altura').value;
-    const peso = document.getElementById('peso').value;
+    const altura = document.getElementById('altura').value.replace(",",".");
+    const peso = document.getElementById('peso').value.replace(",",".");
     const resultado = document.getElementById('resultado');
 
     if (nome !== '' && altura !== ''  && peso !== '')
