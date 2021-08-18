@@ -1,5 +1,3 @@
-
-
 function calcularIMC (peso, altura)
 {
     return (peso / (altura **2)).toFixed(1)
@@ -75,9 +73,22 @@ function exibirResultado()
     
 }
 
+function capturarEnter(event)
+    //recebe o argumento event
+{
+    if(event.key == "Enter")
+    {
+        exibirResultado()
+        // console.log(event.key)
+    }
+}
+
 
 //EVENTOS
   document.getElementById("calcular").addEventListener("click", exibirResultado)
     //botão calcular não vai ser declarado, pois só utilizaremos 1 vez
     //= document.querySelector("_____") Nos ajuda a selecionar classes, tags, ids, como se faz no css
     //EventListsener(_1_, _2_) => 1 é o evento que disparará a ação | 2 CALLBACK - nome da função(apenas nome, sem parentesis)
+
+    document.querySelector("form").addEventListener("keypress", capturarEnter)
+        //ADD EVENT LISTENER: é uma função que retorna um evento. podemos usar isso
